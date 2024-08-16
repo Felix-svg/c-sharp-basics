@@ -149,25 +149,48 @@
 // }
 
 // methods, parameters, and arguments
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Username(string firstName, string lastName)
+//         {
+//             Console.WriteLine($"Name: {firstName} {lastName}");
+//         }
+
+//         static void NameAge(string name, int age)
+//         {
+//             Console.WriteLine($"{name} is {age} years old.");
+//         }
+//         static void Main(string[] args)
+//         {
+//             Username("Jon", "Doe");
+//             NameAge("Jon", 40);
+//         }
+//     }
+// }
+
+
+// default parameters
 using System;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static void Username(string firstName, string lastName)
+        static void Country(string name = "Kenya")
         {
-            Console.WriteLine($"Name: {firstName} {lastName}");
-        }
-
-        static void NameAge(string name, int age)
-        {
-            Console.WriteLine($"{name} is {age} years old.");
+            Console.WriteLine(name);
         }
         static void Main(string[] args)
         {
-            Username("Jon", "Doe");
-            NameAge("Jon", 40);
+            Country("Germany");
+            Country("Nigeria");
+            Country();
+            Country("India");
+            Country("USA");
         }
     }
 }
