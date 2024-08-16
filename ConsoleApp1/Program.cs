@@ -174,23 +174,43 @@
 
 
 // default parameters
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Country(string name = "Kenya")
+//         {
+//             Console.WriteLine(name);
+//         }
+//         static void Main(string[] args)
+//         {
+//             Country("Germany");
+//             Country("Nigeria");
+//             Country();
+//             Country("India");
+//             Country("USA");
+//         }
+//     }
+// }
+
+
+//return values
 using System;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static void Country(string name = "Kenya")
+        static int AddNums(int x, int y)
         {
-            Console.WriteLine(name);
+            return x + y;
         }
         static void Main(string[] args)
         {
-            Country("Germany");
-            Country("Nigeria");
-            Country();
-            Country("India");
-            Country("USA");
+            int z = AddNums(4, 6);
+            Console.WriteLine(z);
         }
     }
 }
