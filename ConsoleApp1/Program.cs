@@ -159,9 +159,15 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Name: {firstName} {lastName}");
         }
+
+        static void NameAge(string name, int age)
+        {
+            Console.WriteLine($"{name} is {age} years old.");
+        }
         static void Main(string[] args)
         {
-            Username("Felix", "Omondi");
+            Username("Jon", "Doe");
+            NameAge("Jon", 40);
         }
     }
 }
