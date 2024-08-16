@@ -197,20 +197,53 @@
 
 
 //return values
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static int AddNums(int x, int y)
+//         {
+//             return x + y;
+//         }
+//         static void Main(string[] args)
+//         {
+//             int z = AddNums(4, 6);
+//             Console.WriteLine(z);
+//         }
+//     }
+// }
+
+
+//named arguments and method overloading 
 using System;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static int AddNums(int x, int y)
+        //named arguments
+        static string MyMethod(string child1, string child2, string child3)
+        {
+            return $"The youngest child is {child3}";
+        }
+
+        // method overloading
+        static int PlusMethod(int x, int y)
+        {
+            return x + y;
+        }
+
+        static double PlusMethod(double x, double y)
         {
             return x + y;
         }
         static void Main(string[] args)
         {
-            int z = AddNums(4, 6);
-            Console.WriteLine(z);
+            Console.WriteLine(MyMethod(child3: "John", child1: "Liam", child2: "Richard"));
+            Console.WriteLine($"Int: {PlusMethod(3, 4)}");
+            Console.WriteLine($"Double: {PlusMethod(3.5, 4.3)}");
         }
     }
 }
