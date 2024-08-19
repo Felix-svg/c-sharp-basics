@@ -283,6 +283,26 @@ using System;
 // }
 
 //polymorphism
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Animal myAnimal = new Animal();
+//             Animal myPig = new Pig();
+//             Animal myDog = new Dog();
+
+//             myAnimal.AnimalSound();
+//             myDog.AnimalSound();
+//             myPig.AnimalSound();
+//         }
+//     }
+// }
+
+//abstarction
 using System;
 
 namespace ConsoleApp1
@@ -291,13 +311,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Animal myAnimal = new Animal();
-            Animal myPig = new Pig();
-            Animal myDog = new Dog();
-            
-            myAnimal.AnimalSound();
-            myDog.AnimalSound();
-            myPig.AnimalSound();
+            Lion myLion = new Lion();
+            myLion.AnimalSound();
+            myLion.Sleep();
         }
     }
 }

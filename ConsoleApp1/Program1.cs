@@ -39,31 +39,54 @@
 // }
 
 //polymorphism
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Animal
+//     {
+//         public virtual void AnimalSound()
+//         {
+//             Console.WriteLine("The animal makes a sound");
+//         }
+//     }
+
+//     class Pig:Animal
+//     {
+//         public override void AnimalSound()
+//         {
+//             Console.WriteLine("The pig says: wee wee");
+//         }
+//     }
+
+//     class Dog:Animal
+//     {
+//         public override void AnimalSound()
+//         {
+//             Console.WriteLine("The dog says: bow bow");
+//         }
+//     }
+// }
+
+//abstaraction
 using System;
 
 namespace ConsoleApp1
 {
-    class Animal
+    abstract class Animal
     {
-        public virtual void AnimalSound()
+        public abstract void AnimalSound();
+        public void Sleep()
         {
-            Console.WriteLine("The animal makes a sound");
+            Console.WriteLine("Zzz");
         }
     }
 
-    class Pig:Animal
+    class Lion : Animal
     {
         public override void AnimalSound()
         {
-            Console.WriteLine("The pig says: wee wee");
-        }
-    }
-
-    class Dog:Animal
-    {
-        public override void AnimalSound()
-        {
-            Console.WriteLine("The dog says: bow bow");
+            Console.WriteLine("The lion says: roar roar");
         }
     }
 }
