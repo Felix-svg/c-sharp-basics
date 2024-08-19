@@ -303,6 +303,23 @@ using System;
 // }
 
 //abstarction
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Lion myLion = new Lion();
+//             myLion.AnimalSound();
+//             myLion.Sleep();
+//         }
+//     }
+// }
+
+
+//interfaces
 using System;
 
 namespace ConsoleApp1
@@ -311,9 +328,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Lion myLion = new Lion();
-            myLion.AnimalSound();
-            myLion.Sleep();
+            Goat myGoat = new Goat();
+            myGoat.AnimalSound();
         }
     }
 }

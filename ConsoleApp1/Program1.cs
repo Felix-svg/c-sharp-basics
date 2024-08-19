@@ -69,24 +69,44 @@
 // }
 
 //abstaraction
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     abstract class Animal
+//     {
+//         public abstract void AnimalSound();
+//         public void Sleep()
+//         {
+//             Console.WriteLine("Zzz");
+//         }
+//     }
+
+//     class Lion : Animal
+//     {
+//         public override void AnimalSound()
+//         {
+//             Console.WriteLine("The lion says: roar roar");
+//         }
+//     }
+// }
+
+
+//interfaces
 using System;
 
 namespace ConsoleApp1
 {
-    abstract class Animal
+    interface IAnimal
     {
-        public abstract void AnimalSound();
-        public void Sleep()
-        {
-            Console.WriteLine("Zzz");
-        }
+        void AnimalSound();
     }
 
-    class Lion : Animal
+    class Goat : IAnimal
     {
-        public override void AnimalSound()
+        public void AnimalSound()
         {
-            Console.WriteLine("The lion says: roar roar");
+            Console.WriteLine("The goat says: meh meh");
         }
     }
 }
