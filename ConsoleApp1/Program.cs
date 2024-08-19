@@ -336,17 +336,110 @@ using System;
 
 
 //multiple interfaces
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             DemoClass myDemoClass = new DemoClass();
+//             myDemoClass.MyMethod1();
+//             myDemoClass.MyMethod2();
+//         }
+//     }
+// }
+
+
+//enums
 using System;
 
 namespace ConsoleApp1
 {
     class Program
     {
+        // enum Level
+        // {
+        //     Low, Medium, High
+        // }
+
+        enum Months
+        {
+            January, February, March, April, May, June, July, August, September, October, November, December
+        }
+
         static void Main(string[] args)
         {
-            DemoClass myDemoClass = new DemoClass();
-            myDemoClass.MyMethod1();
-            myDemoClass.MyMethod2();
+            // Level myEnum = Level.Medium;
+            // Console.WriteLine($"This is a {myEnum} level question");
+            Months myBirthMonth = Months.October;
+            int birthMonth = (int)myBirthMonth + 1;
+            Console.WriteLine($"He was born in the {birthMonth}th month of the year.");
+
+            switch (myBirthMonth)
+            {
+                case Months.January:
+                    {
+                        Console.WriteLine("January");
+                        break;
+                    }
+                case Months.February:
+                    {
+                        Console.WriteLine("February");
+                        break;
+                    }
+                case Months.March:
+                    {
+                        Console.WriteLine("March");
+                        break;
+                    }
+                case Months.April:
+                    {
+                        Console.WriteLine("April");
+                        break;
+                    }
+                case Months.May:
+                    {
+                        Console.WriteLine("May");
+                        break;
+                    }
+                case Months.June:
+                    {
+                        Console.WriteLine("June");
+                        break;
+                    }
+                case Months.July:
+                    {
+                        Console.WriteLine("July");
+                        break;
+                    }
+                case Months.August:
+                    {
+                        Console.WriteLine("August");
+                        break;
+                    }
+                case Months.September:
+                    {
+                        Console.WriteLine("September");
+                        break;
+                    }
+                case Months.October:
+                    {
+                        Console.WriteLine("October");
+                        break;
+                    }
+                case Months.November:
+                    {
+                        Console.WriteLine("November");
+                        break;
+                    }
+                case Months.December:
+                    {
+                        Console.WriteLine("December");
+                        break;
+                    }
+            }
         }
     }
 }
