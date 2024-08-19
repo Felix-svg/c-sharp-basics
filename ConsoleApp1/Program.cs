@@ -353,93 +353,111 @@ using System;
 
 
 //enums
-using System;
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         // enum Level
+//         // {
+//         //     Low, Medium, High
+//         // }
+
+//         enum Months
+//         {
+//             January, February, March, April, May, June, July, August, September, October, November, December
+//         }
+
+//         static void Main(string[] args)
+//         {
+//             // Level myEnum = Level.Medium;
+//             // Console.WriteLine($"This is a {myEnum} level question");
+//             Months myBirthMonth = Months.October;
+//             int birthMonth = (int)myBirthMonth + 1;
+//             Console.WriteLine($"He was born in the {birthMonth}th month of the year.");
+
+//             switch (myBirthMonth)
+//             {
+//                 case Months.January:
+//                     {
+//                         Console.WriteLine("January");
+//                         break;
+//                     }
+//                 case Months.February:
+//                     {
+//                         Console.WriteLine("February");
+//                         break;
+//                     }
+//                 case Months.March:
+//                     {
+//                         Console.WriteLine("March");
+//                         break;
+//                     }
+//                 case Months.April:
+//                     {
+//                         Console.WriteLine("April");
+//                         break;
+//                     }
+//                 case Months.May:
+//                     {
+//                         Console.WriteLine("May");
+//                         break;
+//                     }
+//                 case Months.June:
+//                     {
+//                         Console.WriteLine("June");
+//                         break;
+//                     }
+//                 case Months.July:
+//                     {
+//                         Console.WriteLine("July");
+//                         break;
+//                     }
+//                 case Months.August:
+//                     {
+//                         Console.WriteLine("August");
+//                         break;
+//                     }
+//                 case Months.September:
+//                     {
+//                         Console.WriteLine("September");
+//                         break;
+//                     }
+//                 case Months.October:
+//                     {
+//                         Console.WriteLine("October");
+//                         break;
+//                     }
+//                 case Months.November:
+//                     {
+//                         Console.WriteLine("November");
+//                         break;
+//                     }
+//                 case Months.December:
+//                     {
+//                         Console.WriteLine("December");
+//                         break;
+//                     }
+//             }
+//         }
+//     }
+// }
+
+//file i/o
+using System.IO;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        // enum Level
-        // {
-        //     Low, Medium, High
-        // }
-
-        enum Months
-        {
-            January, February, March, April, May, June, July, August, September, October, November, December
-        }
-
         static void Main(string[] args)
         {
-            // Level myEnum = Level.Medium;
-            // Console.WriteLine($"This is a {myEnum} level question");
-            Months myBirthMonth = Months.October;
-            int birthMonth = (int)myBirthMonth + 1;
-            Console.WriteLine($"He was born in the {birthMonth}th month of the year.");
+            string loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet lacus condimentum, hendrerit arcu sed, ultrices massa. Donec eu ante a quam hendrerit feugiat. Sed ut condimentum ante. Praesent efficitur felis a purus dictum, pharetra auctor lectus dignissim. Curabitur sit amet sem congue, porta sapien quis, mattis mi. Suspendisse dictum viverra condimentum. Quisque eget magna elementum, posuere neque eu, consequat neque.Duis tincidunt vestibulum accumsan. Aliquam pharetra posuere felis quis porta. Vestibulum dignissim in urna ut consectetur. Phasellus consequat, sapien non egestas tempor, felis nisi tristique lectus, aliquet scelerisque nisi diam sit amet tortor. Donec sollicitudin nulla a facilisis ornare. Nunc venenatis sem vitae semper sollicitudin. Phasellus in sagittis tellus, id feugiat urna. Duis vehicula, sem at aliquam maximus, ex mi accumsan odio, sed efficitur lorem turpis sed massa. Cras tristique odio est.Vestibulum laoreet feugiat lectus eu consectetur. Vivamus faucibus, justo ac feugiat bibendum, augue nulla congue mauris, nec fermentum lectus velit eget nisi. Sed semper ultrices tempus. Nullam non pharetra est. Donec aliquet finibus eros ut sollicitudin. Proin blandit nibh ac dictum viverra. Donec quis imperdiet tortor. Fusce gravida quam in nunc aliquam ornare. Cras malesuada euismod tortor, et tincidunt libero maximus nec. Donec ut mi mi. Quisque at tempor felis, at vestibulum neque. Fusce vulputate facilisis velit, vel posuere dolor auctor in.Proin sit amet convallis sapien. Aenean ultricies feugiat sagittis. Suspendisse varius massa leo, et sodales ipsum sagittis malesuada. Cras finibus dignissim ex, sed tincidunt nulla congue ut. Nunc tempus libero a euismod viverra. Ut pulvinar ut diam sed porttitor. Suspendisse gravida, enim at mollis ultricies, urna felis accumsan augue, sed dapibus justo odio at nisi. Fusce pharetra nulla nec tempor accumsan. In metus dui, congue a laoreet sed, sagittis a diam. Suspendisse id convallis leo. In gravida augue ut orci ultricies, et dapibus eros efficitur. Aenean finibus, tortor et feugiat volutpat, ante risus vehicula ipsum, ut facilisis dui eros ac turpis. Curabitur et sem placerat, dapibus felis ac, gravida mi. In malesuada nulla odio.Fusce euismod ipsum non ipsum mollis, a ultrices odio ultricies. Maecenas porta quam et orci condimentum iaculis. Etiam consectetur lectus ex, dapibus ultricies nisi fermentum in. Aliquam convallis risus et sapien ornare, sed lacinia eros volutpat. Nam bibendum in dui quis laoreet. Donec tristique enim tortor, eu consectetur nunc porttitor sed. Cras non metus dignissim, fermentum lorem quis, porta enim. Aenean id elit ullamcorper, rhoncus ex sit amet, sollicitudin arcu.";
+            File.WriteAllText("test.txt", loremIpsum);
 
-            switch (myBirthMonth)
-            {
-                case Months.January:
-                    {
-                        Console.WriteLine("January");
-                        break;
-                    }
-                case Months.February:
-                    {
-                        Console.WriteLine("February");
-                        break;
-                    }
-                case Months.March:
-                    {
-                        Console.WriteLine("March");
-                        break;
-                    }
-                case Months.April:
-                    {
-                        Console.WriteLine("April");
-                        break;
-                    }
-                case Months.May:
-                    {
-                        Console.WriteLine("May");
-                        break;
-                    }
-                case Months.June:
-                    {
-                        Console.WriteLine("June");
-                        break;
-                    }
-                case Months.July:
-                    {
-                        Console.WriteLine("July");
-                        break;
-                    }
-                case Months.August:
-                    {
-                        Console.WriteLine("August");
-                        break;
-                    }
-                case Months.September:
-                    {
-                        Console.WriteLine("September");
-                        break;
-                    }
-                case Months.October:
-                    {
-                        Console.WriteLine("October");
-                        break;
-                    }
-                case Months.November:
-                    {
-                        Console.WriteLine("November");
-                        break;
-                    }
-                case Months.December:
-                    {
-                        Console.WriteLine("December");
-                        break;
-                    }
-            }
+            string readText = File.ReadAllText("test.txt");
+            Console.WriteLine(readText);
         }
     }
 }
