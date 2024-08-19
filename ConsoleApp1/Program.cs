@@ -320,6 +320,22 @@ using System;
 
 
 //interfaces
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Goat myGoat = new Goat();
+//             myGoat.AnimalSound();
+//         }
+//     }
+// }
+
+
+//multiple interfaces
 using System;
 
 namespace ConsoleApp1
@@ -328,8 +344,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Goat myGoat = new Goat();
-            myGoat.AnimalSound();
+            DemoClass myDemoClass = new DemoClass();
+            myDemoClass.MyMethod1();
+            myDemoClass.MyMethod2();
         }
     }
 }

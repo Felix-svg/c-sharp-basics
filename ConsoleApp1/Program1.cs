@@ -93,20 +93,50 @@
 
 
 //interfaces
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     interface IAnimal
+//     {
+//         void AnimalSound();
+//     }
+
+//     class Goat : IAnimal
+//     {
+//         public void AnimalSound()
+//         {
+//             Console.WriteLine("The goat says: meh meh");
+//         }
+//     }
+// }
+
+
+//multiple interfaces
 using System;
 
 namespace ConsoleApp1
 {
-    interface IAnimal
+    interface IFirstInterface
     {
-        void AnimalSound();
+        void MyMethod1();
     }
 
-    class Goat : IAnimal
+    interface ISecondInterface
     {
-        public void AnimalSound()
+        void MyMethod2();
+    }
+
+    class DemoClass : IFirstInterface, ISecondInterface
+    {
+        public void MyMethod1()
         {
-            Console.WriteLine("The goat says: meh meh");
+            Console.WriteLine("Method from interface 1");
+        }
+
+        public void MyMethod2()
+        {
+            Console.WriteLine("Method from interface 2");
         }
     }
 }
