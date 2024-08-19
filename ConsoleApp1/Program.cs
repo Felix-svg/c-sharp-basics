@@ -249,6 +249,24 @@ using System;
 // }
 
 // OOP
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Person person1 = new("Jon Doe", 30, "Male");
+//             Person person2 = new("Jane Doe", 24, "Female");
+//             Console.WriteLine(Person.Talk());
+//             Console.WriteLine($"{person1.Name} is {person1.Age} years old");
+//             Console.WriteLine(person1.Gender);
+//         }
+//     }
+// }
+
+// inheritance
 using System;
 
 namespace ConsoleApp1
@@ -257,11 +275,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Person person1 = new("Jon Doe", 30, "Male");
-            Person person2 = new("Jane Doe", 24, "Female");
-            Console.WriteLine(Person.Talk());
-            Console.WriteLine($"{person1.Name} is {person1.Age} years old");
-            Console.WriteLine(person1.Gender);
+            Car myCar = new();
+            myCar.Honk();
+            Console.WriteLine($"My {myCar.brand} {myCar.model}");
         }
     }
 }
