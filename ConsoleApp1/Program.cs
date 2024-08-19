@@ -267,6 +267,22 @@ using System;
 // }
 
 // inheritance
+// using System;
+
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             Car myCar = new();
+//             myCar.Honk();
+//             Console.WriteLine($"My {myCar.brand} {myCar.model}");
+//         }
+//     }
+// }
+
+//polymorphism
 using System;
 
 namespace ConsoleApp1
@@ -275,9 +291,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Car myCar = new();
-            myCar.Honk();
-            Console.WriteLine($"My {myCar.brand} {myCar.model}");
+            Animal myAnimal = new Animal();
+            Animal myPig = new Pig();
+            Animal myDog = new Dog();
+            
+            myAnimal.AnimalSound();
+            myDog.AnimalSound();
+            myPig.AnimalSound();
         }
     }
 }
