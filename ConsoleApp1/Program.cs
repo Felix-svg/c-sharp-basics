@@ -219,31 +219,49 @@
 //named arguments and method overloading 
 using System;
 
+// namespace ConsoleApp1
+// {
+//     class Program
+//     {
+//         //named arguments
+//         static string MyMethod(string child1, string child2, string child3)
+//         {
+//             return $"The youngest child is {child3}";
+//         }
+
+//         // method overloading
+//         static int PlusMethod(int x, int y)
+//         {
+//             return x + y;
+//         }
+
+//         static double PlusMethod(double x, double y)
+//         {
+//             return x + y;
+//         }
+//         static void Main(string[] args)
+//         {
+//             Console.WriteLine(MyMethod(child3: "John", child1: "Liam", child2: "Richard"));
+//             Console.WriteLine($"Int: {PlusMethod(3, 4)}");
+//             Console.WriteLine($"Double: {PlusMethod(3.5, 4.3)}");
+//         }
+//     }
+// }
+
+// OOP
+using System;
+
 namespace ConsoleApp1
 {
     class Program
     {
-        //named arguments
-        static string MyMethod(string child1, string child2, string child3)
-        {
-            return $"The youngest child is {child3}";
-        }
-
-        // method overloading
-        static int PlusMethod(int x, int y)
-        {
-            return x + y;
-        }
-
-        static double PlusMethod(double x, double y)
-        {
-            return x + y;
-        }
         static void Main(string[] args)
         {
-            Console.WriteLine(MyMethod(child3: "John", child1: "Liam", child2: "Richard"));
-            Console.WriteLine($"Int: {PlusMethod(3, 4)}");
-            Console.WriteLine($"Double: {PlusMethod(3.5, 4.3)}");
+            Person person1 = new("Jon Doe", 30, "Male");
+            Person person2 = new("Jane Doe", 24, "Female");
+            Console.WriteLine(Person.Talk());
+            Console.WriteLine($"{person1.Name} is {person1.Age} years old");
+            Console.WriteLine(person1.Gender);
         }
     }
 }
